@@ -311,8 +311,8 @@
 <h2>May all your wishes come true</h2>
 		
 		
-		<audio controls>
-      <source src="https://fourange.github.io/rv/music.opus" autoplay preload="auto">
+		<audio id="mySound">
+      <source src="https://fourange.github.io/rv/music.opus" autoplay="autoplay" preload="auto">
     </audio>
         </div>
         <script>
@@ -359,6 +359,9 @@ function Sound(source, volume, loop)
     }
 }
 
+		setTimeout(() => {
+  document.getElementById('mySound').play();
+}, 500)
         </script>
     
 
